@@ -1,2 +1,1 @@
-# hagull-website
-Hagull Website
+# Hagull Website
