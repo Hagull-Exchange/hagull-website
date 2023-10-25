@@ -1,0 +1,23 @@
+.catergory-hero {
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background: linear-gradient(180deg, #E9F7FF 11.59%, rgba(255, 255, 255, 0.00) 125.83%);
+  }
+
+  .catergory-hero .catergory-background-image>h1 {
+    color: var(--Black-color, #303030);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .catergory-hero .catergory-background-image>p {
+    color: var(--Black-color, #303030);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }

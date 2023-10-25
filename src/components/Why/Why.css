@@ -1,0 +1,117 @@
+.why-container {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.header-section h6 {
+  color: #757575;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+}
+
+.header-section h1 {
+  color: #303030;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 0 300px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 4rem 1rem;
+  margin-bottom: 4rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-container {
+  background-color: rgba(1, 151, 178, 0.1);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.grid-item h6 {
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+.grid-item h5 {
+  color: #303030;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 16px 0 0px;
+}
+
+.grid-item p {
+  font-size: 24px;
+}
+
+/* Tablet devices (portrait) */
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+  /* .header-section h1 {
+      font-size: 1.4rem;
+      padding: 0 3rem;
+    } */
+}
+
+/* Small desktops and laptops */
+@media (min-width: 900px) {
+  /* .why-container {
+    padding-top: 8rem;
+  } */
+  /* .header-section h6 {
+      padding-bottom: 3rem;
+    } */
+  /* .header-section h1 {
+      font-size: 1.5rem;
+      padding: 0 4.5rem;
+    } */
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 6rem;
+  }
+  .icon-container {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .grid-item h6 {
+    padding-bottom: 1.5rem;
+  }
+  .grid-item p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1200px) {
+  /* .header-section h1 {
+      padding: 0 6rem;
+    } */
+  .grid {
+    padding: 0 8rem;
+  }
+}

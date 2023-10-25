@@ -1,0 +1,67 @@
+ .tabs-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-headers {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    /* border-bottom: 2px solid #0197B2; */
+  }
+  
+  .tab-header {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .tab-header.active {
+    border-bottom: 3px solid #0197B2;
+  }
+  
+  .tab-content {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 50px;
+    box-shadow: 0px 4px 39px 10px rgba(218, 218, 218, 0.25),
+    0px 4px 4px 0px rgba(218, 218, 218, 0.1),
+    4px 0px 4px 2px rgba(218, 218, 218, 0.1);
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border: 2px solid #0197B2;
+    color: #0197B2;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+
+
+.currency-wrapper {
+    background-color: rgba(193, 235, 242, 0.1)
+}
+
+.cryptocurrency .buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 50px;
+    box-shadow: 0px 4px 39px 10px rgba(218, 218, 218, 0.25),
+    0px 4px 4px 0px rgba(218, 218, 218, 0.1),
+    4px 0px 4px 2px rgba(218, 218, 218, 0.1);
+}
+
+.currency-wrapper p {
+    color: #303030;
+}
+
+  
+  

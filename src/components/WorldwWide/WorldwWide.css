@@ -1,0 +1,56 @@
+.worldwide-wrapper {
+  background: rgba(1, 151, 178, 0.1);
+}
+
+.world-wid-text>h1 {
+  color: #303030;
+  font-size: 47px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.worldwid-text>p {
+  color: #303030;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.world-wid-text {
+    padding: 100px 0;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 0.8em;
+    overflow: visible;
+    vertical-align: -0.125em;
+  }
+
+  .world-wid-text button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding-left: 0;
+  }
+
+  .global-image img{
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 206px;
+  }
+
+  .flag-content{
+    position: relative;
+    list-style: none;
+  }
+
+
+
+
+

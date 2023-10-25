@@ -1,0 +1,22 @@
+/* Button.css */
+.botton {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.botton-primary {
+    background-color: #0197B2;
+    color: white;
+    border-radius: 10px;
+}
+
+.botton-secondary {
+    background-color: transparent;
+    color: #0197B2;
+}
+

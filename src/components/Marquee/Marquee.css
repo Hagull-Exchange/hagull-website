@@ -1,0 +1,58 @@
+/* Common styles */
+.marquee {
+ width: 100%;
+  white-space: nowrap;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+  font-size: 18px;
+  color: white;
+  padding-left: 100%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* First background layer */
+.marquee.bg1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -70px;
+  transform: rotate(1.75deg);
+  padding-top: 0.5rem; 
+  padding-bottom: 0.5rem;
+  padding-left: 4.991px;
+  padding-right: 31.47px;
+  align-items: center; 
+  justify-content: flex-end; 
+  flex-shrink: 0;
+  background-color: #0197b2;
+  z-index: 2; 
+}
+
+/* Second background layer */
+.marquee.bg2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -70px;
+  transform: rotate(1deg);
+  flex-shrink: 0;
+  padding-top: 1.25rem; 
+  padding-bottom: 1.25rem;
+  background-color: #0197b280;
+  z-index: 1; 
+}

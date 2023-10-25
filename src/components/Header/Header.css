@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+
+.logo{
+    width: 100px;
+    height: 28px;
+}
+
+.header-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: #303030;
+}
+
+.header-menu>li>a:hover {
+    cursor: pointer;
+    
+}
+
+.header-menu>li>a.active {
+    border-bottom: 2px solid #0197B2 !important;
+    color: #0197B2 !important;
+    padding-bottom: 10px !important; 
+}
+
+.header-menu>li>a {
+        text-decoration: none;
+        color: #303030;
+}
