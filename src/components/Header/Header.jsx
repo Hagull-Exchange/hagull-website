@@ -28,7 +28,7 @@ const Header = () => {
         >
           <path
             d="M3 12H21M3 6H21H3ZM3 18H21H3Z"
-            stroke="black"
+            stroke="#0197B2"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"

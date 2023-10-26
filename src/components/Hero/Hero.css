@@ -17,16 +17,19 @@
     background-size: cover;
     background-position: center;
     color: #303030;
+    padding: 0 15px;
   }
 
   .background-image>h1 {
-    font-size: 48px;
+    /* font-size: 48px; */
     font-style: normal;
     font-weight: 500;
     line-height: 60px;
-    padding: 0 200px;
+    /* padding: 0 200px; */
     text-align: center;
     margin-top: 46px;
+    font-size: 2.5rem;
+  padding: 0 5%;
   }
 
   .background-image>h1>span {
@@ -39,6 +42,8 @@
     padding: 0 300px;
     margin-top: -20px;
     text-align: center;
+    font-size: 1.5rem;
+    padding: 0 5%;
   }
   .background-image>Button{
     display: flex;
@@ -61,6 +66,27 @@
   
  
   @media (max-width: 768px) {
+    .hero {
+      height: 100vh;
+    }
+
+    .floating-image img {
+      max-width: 30%;
+      height: auto;
+      float: right;
+      margin-right: 20px;
+      margin-top: 50px;
+    }
+    .background-image {
+      margin-top: 100px !important;
+    }
+    .background-image > h1 {
+      font-size: 1.5rem;
+    }
+  
+    .background-image > p {
+      font-size: 1.2rem;
+    }
     .bg-text {
       font-size: 18px;
     }
@@ -70,7 +96,7 @@
   }
   .centered-button {
     position: absolute;
-    top: 33%; 
+    top: 25%; 
     left: 50%;
     transform: translateX(-50%);
     background-color: #0197B2;
@@ -89,7 +115,7 @@
   
   .centered-image {
     position: absolute;
-    top: 45%; 
+    top: 50%; 
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -97,16 +123,16 @@
   
   .centered-image img {
     max-width: 100%;
-    height: auto;
   }
+ 
   
 
   @media (max-width: 768px) {
-    .centered-button {
+    /* .centered-button {
       top: 65%;
     }
     .centered-image {
       top: 75%;
-    }
+    } */
   }
 

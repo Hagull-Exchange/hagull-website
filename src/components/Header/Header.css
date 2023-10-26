@@ -61,16 +61,31 @@
     transition: color 0.3s ease;
 }
 
-/* Responsive for smaller screens */
-/* Existing styles... */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
+    .hamburger {
+        display: block;  
+        color: #0197B2;
     }
 
-    .header-menu-wrapper {
+    .header img, .hamburger {
+      display: flex !important;
+      justify-content: space-between !important;
+    }
+
+    /* .header {
+        flex-direction: column;
+    } */
+
+    .menu-wrapper {  /* Updated the class name */
         position: fixed;
         right: 0;
         top: 0;
@@ -86,11 +101,11 @@
     }
 
     .header-menu, .button-group {
-        gap: 0.5rem; /* Reduced gap */
+        gap: 0.5rem; 
     }
 
     .header-menu {
-        margin-top: 1rem; /* Top margin added */
+        margin-top: -480px; 
     }
 }
 
