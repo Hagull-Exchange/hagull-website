@@ -12,34 +12,34 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import KachiPic from "../../assets/kachi.png";
 import ChimdiaPic from "../../assets/chimdia.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const headerVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { delay: 0.2, duration: 1.5 } }
-};
+    visible: { opacity: 1, transition: { delay: 0.2, duration: 1.5 } },
+  };
 
-const teamCardVariants = {
+  const teamCardVariants = {
     hidden: { scale: 0.95, opacity: 0 },
-    visible: { scale: 1, opacity: 1, transition: { duration: 1.5 } }
-};
+    visible: { scale: 1, opacity: 1, transition: { duration: 1.5 } },
+  };
 
+  const overlayVariants = {
+    hidden: { y: "100%" },
+    visible: {
+      y: 0,
+      transition: {
+        duration: 0.4, // 0.4 seconds
+        ease: "easeInOut", // ease-in-out transition
+      },
+    },
+  };
 
-const overlayVariants = {
-    hidden: { y: '100%' },
-    visible: { 
-        y: 0, 
-        transition: { 
-          duration: 0.4,  // 0.4 seconds
-          ease: "easeInOut"  // ease-in-out transition
-      } 
-    }
-};
-
-const iconVariants = {
+  const iconVariants = {
     hidden: { y: 10, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.5 } }
-};
+    visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
+  };
 
   return (
     <section className="about">
@@ -260,9 +260,11 @@ const iconVariants = {
                   opportunities in the global financial landscape.
                 </p>
 
-                <button>
-                  Get Started <FontAwesomeIcon icon={faArrowRight} />
-                </button>
+                <Link to="/category">
+                  <button>
+                    Get Started <FontAwesomeIcon icon={faArrowRight} />
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -291,7 +293,12 @@ const iconVariants = {
 
           <div className="row mt-5">
             <div className="col-md-4">
-              <motion.div className="team-card" initial="hidden" animate="visible" variants={teamCardVariants}>
+              <motion.div
+                className="team-card"
+                initial="hidden"
+                animate="visible"
+                variants={teamCardVariants}
+              >
                 <img src={KachiPic} alt="Team Member 1" />
                 <motion.div
                   className="overlay linkedin"
@@ -299,7 +306,11 @@ const iconVariants = {
                   animate="visible"
                   variants={overlayVariants}
                 >
-                  <a href="https://www.linkedin.com/in/onyedikachi-shedrach-erugo-b1bab3152/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://www.linkedin.com/in/onyedikachi-shedrach-erugo-b1bab3152/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <motion.div variants={iconVariants}>
                       <FontAwesomeIcon icon={faLinkedin} />
                     </motion.div>
@@ -307,13 +318,23 @@ const iconVariants = {
                 </motion.div>
               </motion.div>
 
-              <motion.div  className="text-center mt-3 mb-3 team-desc" initial="hidden" animate="visible" variants={teamCardVariants}>
-              <h6>Onyedikachi Shedrach Erugo</h6>
-              <p>co-CEO</p>
+              <motion.div
+                className="text-center mt-3 mb-3 team-desc"
+                initial="hidden"
+                animate="visible"
+                variants={teamCardVariants}
+              >
+                <h6>Onyedikachi Shedrach Erugo</h6>
+                <p>co-CEO</p>
               </motion.div>
             </div>
             <div className="col-md-4">
-              <motion.div className="team-card" initial="hidden" animate="visible" variants={teamCardVariants}>
+              <motion.div
+                className="team-card"
+                initial="hidden"
+                animate="visible"
+                variants={teamCardVariants}
+              >
                 <img src={ChimdiaPic} alt="Team Member 2" />
                 <motion.div
                   className="overlay linkedin"
@@ -329,13 +350,23 @@ const iconVariants = {
                 </motion.div>
               </motion.div>
 
-              <motion.div  className="text-center mt-3 mb-3 team-desc" initial="hidden" animate="visible" variants={teamCardVariants}>
-              <h6>Shedrack Akuchukwu Erugo</h6>
-              <p>co-CEO / Chief Operation Officer</p>
+              <motion.div
+                className="text-center mt-3 mb-3 team-desc"
+                initial="hidden"
+                animate="visible"
+                variants={teamCardVariants}
+              >
+                <h6>Shedrack Akuchukwu Erugo</h6>
+                <p>co-CEO / Chief Operation Officer</p>
               </motion.div>
             </div>
             <div className="col-md-4">
-              <motion.div className="team-card" initial="hidden" animate="visible" variants={teamCardVariants}>
+              <motion.div
+                className="team-card"
+                initial="hidden"
+                animate="visible"
+                variants={teamCardVariants}
+              >
                 <img src={KachiPic} alt="Team Member 3" />
                 <motion.div
                   className="overlay linkedin"
@@ -353,9 +384,14 @@ const iconVariants = {
             </div>
           </div>
 
-          <div className="row mb-5" style={{marginTop: '100px'}}>
+          <div className="row mb-5" style={{ marginTop: "100px" }}>
             <div className="col-md-3">
-              <motion.div className="team-card" initial="hidden" animate="visible" variants={teamCardVariants}>
+              <motion.div
+                className="team-card"
+                initial="hidden"
+                animate="visible"
+                variants={teamCardVariants}
+              >
                 <img src={KachiPic} alt="Team Member 1" />
                 <motion.div
                   className="overlay linkedin"
@@ -372,7 +408,12 @@ const iconVariants = {
               </motion.div>
             </div>
             <div className="col-md-3">
-              <motion.div className="team-card" initial="hidden" animate="visible" variants={teamCardVariants}>
+              <motion.div
+                className="team-card"
+                initial="hidden"
+                animate="visible"
+                variants={teamCardVariants}
+              >
                 <img src={ChimdiaPic} alt="Team Member 2" />
                 <motion.div
                   className="overlay linkedin"
@@ -389,7 +430,12 @@ const iconVariants = {
               </motion.div>
             </div>
             <div className="col-md-3">
-              <motion.div className="team-card" initial="hidden" animate="visible" variants={teamCardVariants}>
+              <motion.div
+                className="team-card"
+                initial="hidden"
+                animate="visible"
+                variants={teamCardVariants}
+              >
                 <img src={KachiPic} alt="Team Member 3" />
                 <motion.div
                   className="overlay linkedin"
@@ -406,7 +452,12 @@ const iconVariants = {
               </motion.div>
             </div>
             <div className="col-md-3">
-              <motion.div className="team-card" initial="hidden" animate="visible" variants={teamCardVariants}>
+              <motion.div
+                className="team-card"
+                initial="hidden"
+                animate="visible"
+                variants={teamCardVariants}
+              >
                 <img src={KachiPic} alt="Team Member 3" />
                 <motion.div
                   className="overlay linkedin"

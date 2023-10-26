@@ -7,6 +7,8 @@ import Button from "../../../components/Button/Button";
 import CloseUpMan from "../../../assets/close-up-portrait.png";
 import CloseUpShot from "../../../assets/close-up-shot.png";
 import CloseUpYoung from "../../../assets/close-up-young.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const cardsData = [
   {
@@ -98,25 +100,36 @@ const cardsData = [
 const Vendor = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredCards, setFilteredCards] = useState(cardsData);
+  const [selectedCurrency, setSelectedCurrency] = useState(null);
+
+  const resetFilters = () => {
+    setSearchQuery(""); // reset the search query
+    setSelectedCurrency(null); // reset the selected currency
+  };
 
   useEffect(() => {
-    const filtered = cardsData.filter(
+    let filtered = cardsData.filter(
       (card) =>
-        card.vendorName.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        card.currencyPrice.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        card.sellingPrice.toLowerCase().includes(searchQuery.toLowerCase())
+        (card.vendorName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          card.currencyPrice
+            .toLowerCase()
+            .includes(searchQuery.toLowerCase()) ||
+          card.sellingPrice
+            .toLowerCase()
+            .includes(searchQuery.toLowerCase())) &&
+        (!selectedCurrency || card.currencyPrice.includes(selectedCurrency))
     );
-
     setFilteredCards(filtered);
-  }, [searchQuery]);
+  }, [searchQuery, selectedCurrency]);
 
   return (
     <>
       <div className="filter-header container">
-        <div className="input-group mb-5 position-relative">
+        <div className="input-group mb-3 position-relative">
+          <FontAwesomeIcon icon={faSearch} className="search-icon" />
           <input
             type="text"
-            placeholder="Search..."
+            placeholder="Search for sellers, currencies and price."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="form-control search-input"
@@ -128,6 +141,40 @@ const Vendor = () => {
           >
             Clear
           </button>
+        </div>
+        <div className="filters">
+          <ul>
+            <li>
+              <button type="button">All</button>
+            </li>
+            <li>
+              <button type="button">Popular</button>
+            </li>
+            <li>
+              <button type="button">Trending</button>
+            </li>
+            <li>
+              <button type="button" onClick={resetFilters}>
+                Reset Filter
+              </button>
+            </li>
+            <li>
+              <select
+                value={selectedCurrency}
+                onChange={(e) => setSelectedCurrency(e.target.value)}
+                className="currency-dropdown"
+              >
+                <option value="">Currencies</option>
+                <option value="ETH">ETH</option>
+                <option value="BTC">BTC</option>
+                <option value="$">USD</option>
+                <option value="€">EUR</option>
+                <option value="₿">Bitcoin</option>
+                <option value="₦">Naira</option>
+                <option value="R">Rand</option>
+              </select>
+            </li>
+          </ul>
         </div>
       </div>
       <hr />
