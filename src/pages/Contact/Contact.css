@@ -1,0 +1,40 @@
+.contact-page {
+    background-color: rgba(1, 151, 178, 0.1);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-form {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: #fff;
+    margin-top: -100px;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="phone"],
+  .contact-form textarea {
+    border: 1px solid #0197B2;
+    margin-bottom: 20px;
+    width: 100%;
+   
+  }
+  
+  .contact-form input[type="text"]:focus,
+  .contact-form input[type="email"]:focus,
+  .contact-form input[type="phone"]:focus,
+  .contact-form textarea:focus {
+    border: 1px solid rgb(235, 130, 7);
+  }
+  
+  @media (max-width: 768px) {
+    .contact-form {
+      width: 100%;
+      box-shadow: none;
+      padding: 15px;
+    }
+  }
+  
