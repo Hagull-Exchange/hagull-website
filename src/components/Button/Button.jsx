@@ -1,14 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Button.css';
 
-const Button = ({ text, to, variant }) => {
-    const className = `botton botton-${variant}`;
+const Button = ({ text, variant, ...props }) => {
     return (
-        <Link to={to} className={className}>
-            {text}
-        </Link>
+      <button className={`botton botton-${variant}`} {...props}>
+        {text}
+      </button>
     );
-};
+  };
+
+
+  
 
 export default Button;

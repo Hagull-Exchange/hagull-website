@@ -11,8 +11,7 @@ const OnlineVendors = () => {
       <div className="header-container">
         <h4 className="small-header">Top Online Vendors</h4>
         <h1 className="big-header">
-          Discover A Curated Selection Of Top Online Vendors In The Currency
-          Trading Industry.
+          Explore a wide range of our Online vendors
         </h1>
       </div>
       <div className="container my-5">
@@ -36,12 +35,13 @@ const OnlineVendors = () => {
               />
               <div class="card-body">
                 <div className="des-title">
-                <span className="card-title">Current price</span>
-                <span className="percentage">100%</span>
+                <h5 className="tittle mb-3">Vendor's Rates</h5>
+                <p className="percentage">Success: 100%</p>
                 </div>
                 <div className="price">
-                 <p className="currency-price">0.0625 ETH</p>
-                 <p className="selling-price">$ 105.89</p>
+                 <p className="selling-price"><span>Selling rate: </span>0.0625 ETH</p>
+                 <p className="selling-price"><span>Min. quatity: </span>$ 105.89</p>
+                 <p className="selling-price"><span>Max. quatity: </span>$ 105.89</p>
                 </div>
                 <Button text="Hagull" to="/register" variant="primary" />
               </div>
@@ -61,13 +61,14 @@ const OnlineVendors = () => {
               </div>
               <img src={MiddleAged} class="card-img-top" alt="MiddleAged" />
               <div class="card-body">
-              <div className="des-title">
-                <span className="card-title">Current price</span>
-                <span className="percentage">80%</span>
+                <div className="des-title">
+                <h5 className="tittle mb-3">Vendor's Rates</h5>
+                <p className="percentage">Success: 100%</p>
                 </div>
                 <div className="price">
-                 <p className="currency-price">0.0625 BTC</p>
-                 <p className="selling-price">$ 105.89</p>
+                 <p className="selling-price">Selling rate: 0.0625 ETH</p>
+                 <p className="selling-price">Min. quatity: $ 105.89</p>
+                 <p className="selling-price">Max. quatity: $ 105.89</p>
                 </div>
                 <Button text="Hagull" to="/register" variant="primary" />
               </div>
@@ -90,14 +91,15 @@ const OnlineVendors = () => {
                 class="card-img-top"
                 alt="PortraitAfrican"
               />
-              <div class="card-body">
-              <div className="des-title">
-                <span className="card-title">Current price</span>
-                <span className="percentage">95%</span>
+             <div class="card-body">
+                <div className="des-title">
+                <h5 className="tittle mb-3">Vendor's Rates</h5>
+                <p className="percentage">Success: 100%</p>
                 </div>
                 <div className="price">
-                 <p className="currency-price">0.0625 ETH</p>
-                 <p className="selling-price">$ 105.89</p>
+                 <p className="selling-price"><span>Selling rate: </span>0.0625 ETH</p>
+                 <p className="selling-price"><span>Min. quatity: </span>$ 105.89</p>
+                 <p className="selling-price"><span>Max. quatity: </span>$ 105.89</p>
                 </div>
                 <Button text="Hagull" to="/register" variant="primary" />
               </div>

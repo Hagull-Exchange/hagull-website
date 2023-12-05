@@ -48,16 +48,47 @@
   }
   
   .big-header {
-    color: #303030;
+    color: #01161d;
     text-align: center;
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding: 0 280px;
   }
 
   .w-42 {
     width: 42% !important;
+}
+
+.sectionHeaderText {
+    margin-bottom: 20px;
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 125%;
+    color: #0197B2;
+}
+
+.thirdSectionSmallText {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 170%;
+    letter-spacing: .01em;
+    color: #303030;
+    width: 86%;
+}
+
+.thirdRightHeader {
+    font-weight: 500;
+    font-size: 32px;
+    color: #01161d;
+}
+
+.HowItWorks-wrapper span  {
+    color: #ea8207;
+    font-size: 40px;
 }
 

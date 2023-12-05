@@ -13,10 +13,14 @@
     background-color: #0197B2;
     color: white;
     border-radius: 10px;
+    font-weight: 600;
 }
 
 .botton-secondary {
     background-color: transparent;
     color: #0197B2;
+    font-weight: 600;
+    border: 1px solid #0197B2;
+    border-radius: 30px;
 }
 

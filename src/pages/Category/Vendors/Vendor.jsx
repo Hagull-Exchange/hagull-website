@@ -15,84 +15,96 @@ const cardsData = [
     vendorName: "Felix Joe",
     image: ManCrossedArm,
     pricePercentage: "100%",
-    currencyPrice: "0.0625 ETH",
+    minQuatity: "$ 140.89",
+    maxQuatity: "$ 140.80",
     sellingPrice: "$ 105.89",
   },
   {
     vendorName: "Kachi Erugo",
     image: MiddleAged,
     pricePercentage: "80%",
-    currencyPrice: "0.0625 BTC",
+    minQuatity: "$ 140.89",
+    maxQuatity: "$ 140.80",
     sellingPrice: "$ 105.89",
   },
   {
     vendorName: "Shedrack Erugo",
     image: PortraitAfrican,
     pricePercentage: "95%",
-    currencyPrice: "0.0625 ETH",
+    minQuatity: "$ 140.89",
+    maxQuatity: "$ 140.80",
     sellingPrice: "$ 105.89",
   },
   {
     vendorName: "Jane Smith",
     image: CloseUpMan, // replace with actual path
     pricePercentage: "90%",
-    currencyPrice: "0.0650 ETH",
+    minQuatity: "$ 140.89",
+    maxQuatity: "$ 140.80",
     sellingPrice: "$ 110.89",
   },
   {
     vendorName: "John Doe",
     image: CloseUpShot, // replace with actual path
     pricePercentage: "85%",
-    currencyPrice: "0.0600 BTC",
+    minQuatity: "$ 140.89",
+    maxQuatity: "$ 140.80",
     sellingPrice: "$ 100.89",
   },
   {
     vendorName: "Alice Cooper",
     image: CloseUpYoung, // replace with actual path
     pricePercentage: "75%",
-    currencyPrice: "0.0700 ETH",
+    minQuatity: "$ 140.89",
+    maxQuatity: "$ 140.80",
     sellingPrice: "$ 120.89",
   },
   {
     vendorName: "Bob Marley",
     image: ManCrossedArm, // replace with actual path
     pricePercentage: "70%",
-    currencyPrice: "0.0800 BTC",
+    minQuatity: "$ 140.89",
+    maxQuatity: "$ 140.80",
     sellingPrice: "$ 130.89",
   },
   {
     vendorName: "Charlie Chaplin",
     image: PortraitAfrican, // replace with actual path
     pricePercentage: "65%",
-    currencyPrice: "0.0550 ETH",
+    minQuatity: "$ 140.89",
+    maxQuatity: "$ 140.80",
     sellingPrice: "$ 95.89",
   },
   {
     vendorName: "Daisy Ridley",
     image: CloseUpYoung, // replace with actual path
     pricePercentage: "60%",
-    currencyPrice: "0.0750 BTC",
+    minQuatity: "$ 140.89",
+    maxQuatity: "$ 140.80",
     sellingPrice: "$ 125.89",
   },
   {
     vendorName: "Eddie Murphy",
     image: CloseUpShot, // replace with actual path
     pricePercentage: "55%",
-    currencyPrice: "0.0850 ETH",
+    minQuatity: "$ 140.89",
+    maxQuatity: "$ 140.80",
     sellingPrice: "$ 135.89",
   },
   {
     vendorName: "Frank Sinatra",
     image: CloseUpMan, // replace with actual path
     pricePercentage: "50%",
-    currencyPrice: "0.0500 BTC",
+    minQuatity: "$ 140.89",
+    maxQuatity: "$ 140.80",
     sellingPrice: "$ 90.89",
   },
   {
     vendorName: "Grace Kelly",
     image: MiddleAged, // replace with actual path
     pricePercentage: "45%",
-    currencyPrice: "0.0900 ETH",
+    minQuatity: "$ 140.89",
+    maxQuatity: "$ 140.80",
     sellingPrice: "$ 140.89",
   },
 ];
@@ -111,13 +123,13 @@ const Vendor = () => {
     let filtered = cardsData.filter(
       (card) =>
         (card.vendorName.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          card.currencyPrice
+          card.sellingPrice
             .toLowerCase()
             .includes(searchQuery.toLowerCase()) ||
           card.sellingPrice
             .toLowerCase()
             .includes(searchQuery.toLowerCase())) &&
-        (!selectedCurrency || card.currencyPrice.includes(selectedCurrency))
+        (!selectedCurrency || card.sellingPrice.includes(selectedCurrency))
     );
     setFilteredCards(filtered);
   }, [searchQuery, selectedCurrency]);
@@ -144,7 +156,7 @@ const Vendor = () => {
         </div>
         <div className="filters">
           <ul>
-            <li>
+            {/* <li>
               <button type="button">All</button>
             </li>
             <li>
@@ -152,7 +164,7 @@ const Vendor = () => {
             </li>
             <li>
               <button type="button">Trending</button>
-            </li>
+            </li> */}
             <li>
               <button type="button" onClick={resetFilters}>
                 Reset Filter
@@ -196,12 +208,14 @@ const Vendor = () => {
                 <img src={card.image} className="card-img-top" alt="Card" />
                 <div className="card-body">
                   <div className="des-title">
-                    <span className="card-title">Current price</span>
-                    <span className="percentage">{card.pricePercentage}</span>
+                  <h5 className="tittle mb-3">Vendor's Rates</h5>
+                    <p className="percentage">Success: {card.pricePercentage}</p>
                   </div>
                   <div className="price">
-                    <p className="currency-price">{card.currencyPrice}</p>
-                    <p className="selling-price">{card.sellingPrice}</p>
+                    {/* <p className="currency-price">{card.currencyPrice}</p> */}
+                    <p className="selling-price">Selling rate: {card.sellingPrice}</p>
+                    <p className="selling-price">Min. quatity: {card.minQuatity}</p>
+                    <p className="selling-price">Max. quatity: {card.maxQuatity}</p>
                   </div>
                   <Button text="Hagull" to="/register" variant="primary" />
                 </div>

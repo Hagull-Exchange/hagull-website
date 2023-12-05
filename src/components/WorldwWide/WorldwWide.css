@@ -4,7 +4,7 @@
 
 .world-wid-text>h1 {
   color: #303030;
-  font-size: 47px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -32,9 +32,16 @@
 
   .world-wid-text button {
     background-color: transparent;
-    border: none;
+    border: 2px solid #0197b2;
     cursor: pointer;
-    padding-left: 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+
+  .world-wid-text button a {
+    text-decoration: none;
+    color: #303030;
+    font-weight: 700;
   }
 
   .global-image img{
@@ -49,6 +56,13 @@
     position: relative;
     list-style: none;
   }
+  @media (max-width: 768px) {
+    .world-wid-text>h1 {
+      font-size: 28px;
+    }
+  }
+  
+ 
 
 
 

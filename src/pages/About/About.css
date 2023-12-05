@@ -1,17 +1,17 @@
-.img-group {
+/* .img-group {
   display: flex;
-}
+} */
 
 .img-group img {
-  border-radius: 10px;
-  width: 300px;
-  height: 450px;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
 }
 
-.img-group .FirstImg {
+/* .img-group .FirstImg {
   margin-top: 200px;
   margin-right: 20px;
-}
+} */
 
 .about-hero h2 {
   color: #303030;
@@ -19,20 +19,18 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-top: 280px;
+  margin-top: 30px;
 }
 
-.about-hero h2 span {
-  border-radius: 0px 0px 20px 20px;
-  background: rgba(1, 151, 178, 0.5);
-  color: #fff;
-  padding: 280px 10px 20px;
+.about-hero span {
+  color: #0197b2;
+  font-weight: 700;
 }
 
 .about-hero p {
   max-width: 100%;
   color: #000;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -74,6 +72,7 @@
 
 .vision-section {
   background: rgba(138, 237, 255, 0.1);
+  padding-top: 2rem;
 }
 .vision-section h4 {
   color: #212121;
@@ -94,7 +93,7 @@
 
 .vision h5 {
   color: var(--system-grey-900, #212121);
-  font-size: 40px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -103,7 +102,7 @@
 
 .vision p {
   color: #000;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -112,6 +111,7 @@
 .vision img {
   max-width: 400px;
   max-height: 340px;
+  border-radius: 20px;
 }
 
 .value .header-container {
@@ -136,7 +136,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  padding: 0 280px;
 }
 
 .value-card {
@@ -228,8 +227,8 @@
 
 .team-card {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 350px;
   overflow: hidden;
   border-radius: 20px;
 }
@@ -292,6 +291,32 @@
   font-size: 14px;
   font-weight: 700;
   color: #303030;
+}
+
+.team {
+  margin-bottom: 100px;
+}
+
+.vision-section .container {
+  padding: 0px 10rem;
+}
+
+.vision-section .vision {
+  padding-top: 35px;
+}
+
+@media (max-width: 768px) {
+  .vision-section .container {
+    padding: 10px;
+  }
+
+  .vision-section img {
+    width: 100%;
+  }
+
+  .vision-section .vision {
+    margin-top: -149px;
+  }
 }
 
 

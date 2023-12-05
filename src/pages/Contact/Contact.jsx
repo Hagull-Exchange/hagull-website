@@ -54,11 +54,20 @@ const Contact = () => {
   return (
     <>
       <div className="contact-page">
+        <div className="contact-hero pt-3">
+          <div className="container">
+            <div className="contact-background-image">
+              <h1 className="text-center">Contact Us</h1>
+              <p className="pt-3 text-center">
+                Welcome to our Contact page, Feel free to reach out to us and we will swiftly response to you, if you have any complains and contribution also kindly reach out.
+              </p>
+            </div>
+          </div>
+        </div>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-7">
               <form className="contact-form shadow" onSubmit={handleSubmit}>
-                <h1 className="mb-3">Contact Us</h1>
                 <div className="form-group pb-3">
                   <label htmlFor="name">Name</label>
                   <input

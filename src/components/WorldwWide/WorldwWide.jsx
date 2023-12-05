@@ -4,15 +4,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import GlobalImg from "../../assets/Globe.png";
 import UkBoy from "../../assets/ukboy.png";
-import UKFlag from "../../assets/uk.png";
+import Europe from "../../assets/europe.png";
 import USgirl from "../../assets/usgirl.png";
-import USFlag from "../../assets/usa.png"
-import Indiaboy from "../../assets/indiaboy.png"
-import IndiaFlag from "../../assets/india.png"
+import USFlag from "../../assets/usa.png";
+import Indiaboy from "../../assets/indiaboy.png";
+import IndiaFlag from "../../assets/india.png";
 import Mama from "../../assets/mama.jpeg";
-import NigerianFlag from "../../assets/nigerianflag.png"
-import BrazilGirl from "../../assets/brazilgirl.jpeg"
-import BrazilFlag from "../../assets/brazilflag.jpeg"
+import NigerianFlag from "../../assets/nigerianflag.png";
+import BrazilGirl from "../../assets/brazilgirl.jpeg";
+import BrazilFlag from "../../assets/brazilflag.jpeg";
+import { Link } from "react-router-dom";
 
 const WorldwWide = () => {
   return (
@@ -33,20 +34,20 @@ const WorldwWide = () => {
                       width: "70px",
                       height: "70px",
                       borderRadius: "50%",
-                      bottom: '-269px',
+                      bottom: "-269px",
                     }}
                   />
                   <span>
                     <img
-                      src={UKFlag}
-                      alt="UKFlag"
+                      src={Europe}
+                      alt="Europe"
                       style={{
                         position: "absolute",
                         width: "30px",
                         height: "30px",
                         borderRadius: "50%",
                         right: "8%",
-                        marginTop: '231px'
+                        marginTop: "231px",
                       }}
                     />
                   </span>
@@ -62,7 +63,7 @@ const WorldwWide = () => {
                       width: "70px",
                       height: "70px",
                       borderRadius: "50%",
-                      bottom: '-120px',
+                      bottom: "-120px",
                     }}
                   />
                   <span>
@@ -75,7 +76,7 @@ const WorldwWide = () => {
                         height: "30px",
                         borderRadius: "50%",
                         right: "26%",
-                        marginTop: '80px'
+                        marginTop: "80px",
                       }}
                     />
                   </span>
@@ -91,7 +92,7 @@ const WorldwWide = () => {
                       width: "70px",
                       height: "70px",
                       borderRadius: "50%",
-                      bottom: '-157px',
+                      bottom: "-157px",
                     }}
                   />
                   <span>
@@ -104,7 +105,7 @@ const WorldwWide = () => {
                         height: "30px",
                         borderRadius: "50%",
                         right: "53%",
-                        marginTop: '120px'
+                        marginTop: "120px",
                       }}
                     />
                   </span>
@@ -120,7 +121,7 @@ const WorldwWide = () => {
                       width: "70px",
                       height: "75px",
                       borderRadius: "50%",
-                      bottom: '-120px',
+                      bottom: "-120px",
                     }}
                   />
                   <span>
@@ -133,7 +134,7 @@ const WorldwWide = () => {
                         height: "30px",
                         borderRadius: "50%",
                         right: "82%",
-                        marginTop: '82px'
+                        marginTop: "82px",
                       }}
                     />
                   </span>
@@ -149,7 +150,7 @@ const WorldwWide = () => {
                       width: "70px",
                       height: "70px",
                       borderRadius: "50%",
-                      bottom: '-269px',
+                      bottom: "-269px",
                     }}
                   />
                   <span>
@@ -162,7 +163,7 @@ const WorldwWide = () => {
                         height: "30px",
                         borderRadius: "50%",
                         left: "4%",
-                        marginTop: '231px'
+                        marginTop: "231px",
                       }}
                     />
                   </span>
@@ -184,7 +185,9 @@ const WorldwWide = () => {
             </p>
 
             <button>
-              Get Started <FontAwesomeIcon icon={faArrowRight} />
+              <Link to="/category">
+                Get Started <FontAwesomeIcon icon={faArrowRight} />
+              </Link>
             </button>
           </div>
         </div>

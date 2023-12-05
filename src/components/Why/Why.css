@@ -1,5 +1,5 @@
 .why-container {
-  text-align: center;
+  /* text-align: center; */
   padding-top: 3rem;
 }
 
@@ -19,7 +19,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  padding: 0 300px;
 }
 
 .grid {
@@ -33,7 +32,11 @@
 .grid-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
+}
+.icon-container .svg-inline--fa {
+  color: #0197b2;
+  font-size: 24px !important;
 }
 
 .icon-container {
@@ -45,14 +48,21 @@
   justify-content: center;
   border-radius: 50%;
 }
-
+.icon-container img {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(1, 151, 178, 0.1);
+  border-radius: 50%;
+}
+.grid-item .card h5, p {
+  text-align: left;
+}
 .grid-item h6 {
   font-weight: 500;
   padding-bottom: 1rem;
 }
 .grid-item h5 {
   color: #303030;
-  text-align: center;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -113,5 +123,11 @@
     } */
   .grid {
     padding: 0 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-section h1 {
+    font-size: 28px;
   }
 }

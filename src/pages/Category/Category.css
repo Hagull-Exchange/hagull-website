@@ -18,7 +18,17 @@
     color: var(--Black-color, #303030);
     font-size: 24px;
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 0 200px;
+    font-weight: 300;
+    line-height: 35px;
   }
+  @media (max-width: 768px) {
+    .catergory-hero .catergory-background-image>h1 {
+      font-size: 28px;
+    }
+
+    .catergory-hero .catergory-background-image>p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  

@@ -1,5 +1,17 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Bitcoin from "../../assets/Bitcoin.webp";
+import Ethereum from "../../assets/Ethereum.webp";
+import Binance from "../../assets/binance.png"
+import Solana from "../../assets/Solana.png"
+import Shiba from "../../assets/SHIBA.webp"
+import Litecoin from "../../assets/Litecoin.webp"
+import Tether from "../../assets/Tether.webp"
+import Ripple from "../../assets/XRP.webp"
+import USDC from "../../assets/USDC.png"
+import Doge from "../../assets/doge.png"
+import Cardano from "../../assets/Cardano.png"
+import Chainlink from "../../assets/chainlink.webp"
 import "./Currencies.css";
 
 // const tabVariants = {
@@ -11,18 +23,19 @@ const Tabs = () => {
   const [activeTab, setActiveTab] = useState("Africa");
 
   const continents = {
-    Africa: ["NGN", "ZAR", "EGP", "MAD", "XOF", "XAF", "CEDIS", "KES"],
-    Asia: ["JPY", "CNY", "KRW", "INR", "KRW"],
-    Europe: ["EUR", "GBP", "CHF", "SEK"],
-    "North America": ["USD", "CAD", "MXN"],
-    "South America": ["BRL", "ARS", "COP"],
-    "Australia/Oceania": ["AUD", "NZD"],
-  };
+    Africa: ["🇳🇬", "🇿🇦", "🇪🇬", "🇲🇦", "🇧🇯", "🇨🇲", "🇬🇭", "🇰🇪"],
+    Asia: ["🇯🇵", "🇨🇳", "🇰🇷", "🇮🇳"],
+    Europe: ["🇪🇺", "🇬🇧", "🇨🇭", "🇸🇪"],
+    "North America": ["🇺🇸", "🇨🇦", "🇲🇽"],
+    "South America": ["🇧🇷", "🇦🇷", "🇨🇴"],
+    "Oceania": ["🇦🇺", "🇳🇿"],
+};
+
 
   return (
-    <div className="currency-wrapper py-3">
+    <div className="currency-wrapper">
     <div className="container">
-      <h1 className="text-center mt-5">Currency Listing</h1>
+      <h1 className="text-center">Currency Listing</h1>
       <p className="text-center mt-5 mb-3 fw-bold">Fiat Currencies</p>
       <div className="tabs">
         <div className="tabs-container">
@@ -53,18 +66,20 @@ const Tabs = () => {
       <div className="cryptocurrency mt-5">
         <div className="container">
         <p className="text-center mb-3 fw-bold">Crypto Currencies</p>
-          <div className="buttons mb-5">
-            <button>BTC</button>
-            <button>ETH</button>
-            <button>BNB</button>
-            <button>ADA</button>
-            <button>SOL</button>
-            <button>XRP</button>
-            <button>DOT</button>
-            <button>LTC</button>
-            <button>DOGE</button>
-            <button>USDTC</button>
-          </div>
+          <ul className="buttons mb-5">
+            <li><img src={Bitcoin} alt="Bitcoin" /></li>
+            <li><img src={Ethereum} alt="Ethereum" /></li>
+            <li><img src={Binance} alt="Binance" /></li>
+            <li><img src={Solana} alt="Solana" /></li>
+            <li><img src={Shiba} alt="Shiba" /></li>
+            <li><img src={Litecoin} alt="Litecoin" /></li>
+            <li><img src={Tether} alt="Tether" /></li>
+            <li><img src={Ripple} alt="Ripple" /></li>
+            <li><img src={USDC} alt="USDC" /></li>
+            <li><img src={Doge} alt="Doge" /></li>
+            <li><img src={Cardano} alt="Cardano" /></li>
+            <li><img src={Chainlink} alt="Chainlink" /></li>
+          </ul>
         </div>
       </div>
     </div>

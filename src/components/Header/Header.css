@@ -1,7 +1,16 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 2rem;
+  padding: 0;
+}
+
+
+
+
+
+.bg-body-tertiary{
+  padding: 0 !important;
+  background-color: transparent !important;
 }
 
 .logo {
@@ -10,7 +19,12 @@
   margin-top: 12px;
 }
 
-.header-menu {
+nav .botton-primary {
+  border-radius: 30px;
+  padding: 12px 20px;
+}
+
+nav .header-menu {
   list-style: none;
   display: flex;
   gap: 2rem;
@@ -18,17 +32,16 @@
   margin-top: 12px;
 }
 
-.header-menu > li > a:hover {
+nav .header-menu > a:hover {
   cursor: pointer;
 }
 
-.header-menu > li > a.active {
-  border-bottom: 2px solid #0197b2 !important;
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show  {
   color: #0197b2 !important;
-  padding-bottom: 10px !important;
+  font-weight: 700;
 }
 
-.header-menu > li > a {
+nav .header-menu > a {
   text-decoration: none;
   color: #303030;
 }
