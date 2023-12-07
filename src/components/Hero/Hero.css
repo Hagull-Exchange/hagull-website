@@ -27,7 +27,7 @@
 .download {
   display: flex;
   gap: 31px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .background-image .download .apple {

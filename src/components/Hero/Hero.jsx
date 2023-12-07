@@ -23,19 +23,13 @@ const Hero = () => {
                 .
                 {/* Open up a world of currency exchange: Connect, Trade, and Hagull */}
               </h1>
-              <p className="pt-3">
+              <p className="pt-3 pb-3">
                 A marketplace that empowers individuals worldwide to
                 effortlessly buy, sell, and exchange currencies.
               </p>
-              <button className="explore-button mt-3">
-                <Link to="/category">Get Started</Link>
-              </button>
-
-              {/* <div className="download">
-            <Link to="#"><button></button></Link>
-            <Link to="#"><button></button></Link>
-            </div> */}
-
+              <p style={{ color: "#ea8207", fontWeight: "700" }}>
+                Coming soon....
+              </p>
               <div className="download">
                 <Link className="apple" to="#">
                   <FontAwesomeIcon
@@ -58,9 +52,40 @@ const Hero = () => {
                   </div>
                 </Link>
               </div>
-              <p style={{ color: "#ea8207", fontWeight: "700" }}>
+              {/* <button className="explore-button mt-3">
+                <Link to="/category">Get Started</Link>
+              </button> */}
+
+              {/* <div className="download">
+            <Link to="#"><button></button></Link>
+            <Link to="#"><button></button></Link>
+            </div> */}
+
+              {/* <div className="download">
+                <Link className="apple" to="#">
+                  <FontAwesomeIcon
+                    icon={faGooglePlay}
+                    style={{ color: "white", fontSize: "30px" }}
+                  />
+                  <div className="buttonText">
+                    <p className="buttonSmallText">Get it on</p>
+                    <p className="buttonLargeText">Google Play</p>
+                  </div>
+                </Link>
+                <Link className="apple" to="#">
+                  <FontAwesomeIcon
+                    icon={faApple}
+                    style={{ color: "white", fontSize: "30px" }}
+                  />
+                  <div class="buttonText">
+                    <p class="buttonSmallText2">Download on the</p>
+                    <p class="buttonLargeText">App Store</p>
+                  </div>
+                </Link>
+              </div> */}
+              {/* <p style={{ color: "#ea8207", fontWeight: "700" }}>
                 Coming soon....
-              </p>
+              </p> */}
             </div>
             <div className="col-md-4"></div>
           </div>
